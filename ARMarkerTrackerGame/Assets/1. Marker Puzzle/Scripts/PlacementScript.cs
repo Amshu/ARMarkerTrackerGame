@@ -7,11 +7,11 @@ public class PlacementScript : MonoBehaviour
 {
     [SerializeField] float Cooldown = 0.0f;
 
-    [SerializeField] GameObject Platform;
-    [SerializeField] float SpawnOffset;
-    [SerializeField] Button PlaceButton;
+    [SerializeField] GameObject Platform = null;
+    [SerializeField] float SpawnOffset = 0.0f;
+    [SerializeField] Button PlaceButton = null;
 
-    [SerializeField] bool IsButtonEnabled;
+    [SerializeField] bool IsButtonEnabled = false;
 
     private void Start()
     {

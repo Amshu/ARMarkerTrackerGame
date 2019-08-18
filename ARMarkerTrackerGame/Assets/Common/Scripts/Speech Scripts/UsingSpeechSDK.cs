@@ -8,12 +8,12 @@ using UnityEngine.Android;
 public class UsingSpeechSDK : MonoBehaviour
 {
     // Hook up the two properties below with a Text and Button object in your UI.
-    public Text outputText;
-    public Button startRecoButton;
+    public Text outputText = null;
+    public Button startRecoButton = null;
 
     private object threadLocker = new object();
-    private bool waitingForReco;
-    private string message;
+    private bool waitingForReco = false;
+    private string message = "";
 
     private bool micPermissionGranted = false;
 

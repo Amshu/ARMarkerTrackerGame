@@ -4,23 +4,17 @@ using UnityEngine;
 
 public class Dragon : MonoBehaviour
 {
-    [SerializeField] Vector3 PlatformOffset;
-    [SerializeField] Vector3 FinishOffset;
+    [SerializeField] Vector3 PlatformOffset = Vector3.zero;
+    [SerializeField] Vector3 FinishOffset = Vector3.zero;
 
-    [SerializeField] GameObject CurrentLocation;
+    [SerializeField] GameObject CurrentLocation = null;
 
-    [SerializeField] GameObject WinTxt;
+    [SerializeField] GameObject WinTxt = null;
 
     // Start is called before the first frame update
     void Start()
     {
         WinTxt.SetActive(false);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     private void OnTriggerEnter(Collider other)

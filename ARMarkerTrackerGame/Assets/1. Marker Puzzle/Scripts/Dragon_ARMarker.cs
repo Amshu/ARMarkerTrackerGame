@@ -19,7 +19,7 @@ public class Dragon_ARMarker : MonoBehaviour, ITrackableEventHandler
 {
 
     bool isScanned = false;
-    [SerializeField] PlacementScript placeScript;
+    [SerializeField] PlacementScript placeScript = null;
 
     #region PROTECTED_MEMBER_VARIABLES
 

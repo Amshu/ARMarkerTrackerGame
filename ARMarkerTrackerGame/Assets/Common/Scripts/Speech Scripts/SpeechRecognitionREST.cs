@@ -14,9 +14,9 @@ public class SpeechRecognitionREST : MonoBehaviour
     string subscriptionKey = "b681a6431d8e4234a84f417fac5c8922";
     string token;
 
-    [SerializeField] Text responseText;
-    [SerializeField] Text feedback;
-    [SerializeField] AudioClip soundClip;
+    [SerializeField] Text responseText = null;
+    [SerializeField] Text feedback = null;
+    [SerializeField] AudioClip soundClip = null;
 
     // length of any recording sent. 10s is the limit
     int recordDuration = 5;
