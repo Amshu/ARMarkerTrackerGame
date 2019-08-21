@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Dragon : MonoBehaviour
 {
+    [SerializeField] Camera ArCam = null;
     [SerializeField] Vector3 PlatformOffset = Vector3.zero;
     [SerializeField] Vector3 FinishOffset = Vector3.zero;
 
@@ -11,10 +12,22 @@ public class Dragon : MonoBehaviour
 
     [SerializeField] GameObject WinTxt = null;
 
+    [SerializeField] List<GameObject> PlatformsJumpedOnBefore;
     // Start is called before the first frame update
     void Start()
     {
         WinTxt.SetActive(false);
+    }
+
+    private void Update()
+    {
+        transform.LookAt(ArCam.transform);
+        //LookAtCamera();
+    }
+
+    private void LookAtCamera()
+    {
+        transform.LookAt(ArCam.transform);
     }
 
     private void OnTriggerEnter(Collider other)

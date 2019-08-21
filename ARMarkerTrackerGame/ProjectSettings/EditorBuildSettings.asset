@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/1. Marker Puzzle/MarkerPuzzle.unity
+    path: Assets/MarkerPuzzle.unity
     guid: be17c378c628605408eb5571e8d57a96
   m_configObjects: {}
