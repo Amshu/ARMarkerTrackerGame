@@ -15,6 +15,7 @@ public class PlacementScript : MonoBehaviour
 
     private void Start()
     {
+        PlaceButton.GetComponentInParent<Animator>().enabled = false;
         PlaceButton.enabled = false;
         PlaceButton.image.color = Color.red;
     }
@@ -45,5 +46,6 @@ public class PlacementScript : MonoBehaviour
 
         PlaceButton.enabled = true;
         PlaceButton.image.color = Color.green;
+        PlaceButton.GetComponentInParent<Animator>().enabled = true;
     }
 }

@@ -17,8 +17,8 @@ MonoBehaviour:
     ufoLicenseKey: QVZ6bGhZNy8vLy8vQUFBQUtFSVBibWdEcTBYeGpLeW9tdlVuelBBQ1Zyb3publprbUE5R1VyMDlIVUFaNzlOZWJKNU5JZHp3K0VpbFJ1TkVBbnJJY1FtOUJyOEFjUWtQQk1WZHU0bW5xd0phZFBJZWY4SUVYN295UmUzaUhqOFRMaVlKdGJ2OXBwWjFxdnNoNDhtQlZUWGhBMVF1TVRZZkZ5SSt5Smw1YkE2MzZWOVZMaU5FWmVYREVlQzZ3T2hkWjdvTHdOc1FJMVJrZzBhVzJBcytnU0tLTlVKdjZBMkJ6cEtTRXNCbmtXUmp3c0dPdWlhdGlkak9sMWRobytOTWZkYmd2cFYwMFp5dTRwK0g4Y28yR2pIQVdNakFSY0o2Rmptb2lzUzEwT083VjQzQmxMSlA1SDRxU3I2WjlpazJ4bVRyZlJEMXRwRGVrcW1XZVV2OXBRQ3VueC90bHB2TGRwbTFSNU95d29mTHpJY3BVeEF4VzZUcE5QcjA=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
-    maxSimultaneousImageTargets: 1
-    maxSimultaneousObjectTargets: 1
+    maxSimultaneousImageTargets: 20
+    maxSimultaneousObjectTargets: 20
     useDelayedLoadingObjectTargets: 0
     modelTargetRecoWhileExtendedTracked: 1
     version: 8.3.8
@@ -54,8 +54,8 @@ MonoBehaviour:
     matteShader: {fileID: 4800000, guid: 66d0d78a3000021448b598bb54a3bfdf, type: 3}
     videoBackgroundEnabled: 1
   deviceTracker:
-    autoInitTracker: 0
-    autoStartTracker: 0
+    autoInitTracker: 1
+    autoStartTracker: 1
     arcoreRequirement: 2
     trackingMode: 1
     posePrediction: 0

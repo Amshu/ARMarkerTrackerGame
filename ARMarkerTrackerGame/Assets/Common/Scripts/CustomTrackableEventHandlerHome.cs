@@ -1,16 +1,11 @@
 ﻿using UnityEngine;
 
-public class CustomTrackableEventHandler : DefaultTrackableEventHandler
+public class CustomTrackableEventHandlerHome : DefaultTrackableEventHandler
 {
     bool isScanned = false;
     [SerializeField] PlacementScript placeScript = null;
-    [SerializeField] GameObject objectToActivate = null;
 
     #region OVERRIDED_METHODS
-    private void Awake()
-    {
-        objectToActivate.SetActive(false);
-    }
 
     override protected void Start()
     {
@@ -24,9 +19,11 @@ public class CustomTrackableEventHandler : DefaultTrackableEventHandler
 
     protected override void OnTrackingFound()
     {
-       // base.OnTrackingFound();
-
-        objectToActivate.SetActive(true);
+        if (!isScanned)
+        {
+            isScanned = true;
+            placeScript.EnableButton();
+        }
     }
 
     protected override void OnTrackingLost()
